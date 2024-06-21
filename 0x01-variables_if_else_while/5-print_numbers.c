@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    for (i = 0; i <= 9; i++)
-    {
-        printf("%d", i); /*Print each digit*/
-    }
+	for (i = 0; i <= 9; i++)
+	{
+		printf("%d", i); /* Print each digit */
+	}
 
-    printf("\n"); /*Print a new line at the end*/
+	printf("\n"); /* Print a new line at the end */
 
-    return (0);
+	return (0);
 }
+
