@@ -1,0 +1,25 @@
+#include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+        /*Declare variable letter with value a*/
+        char letter = 'a';
+
+        while ((letter>='A'&&letter<='Z')||(letter>='a'&&letter<='z'))
+        {
+                putchar(letter); /*print the current letter*/
+                letter++; /*Increment letter by 1 to go to the next letter in ASCII*/
+		/*Make check to sure that when print z go to A letter*/
+		if (letter==123)
+			letter=65;
+        }
+
+        /*output> new line character causing the next output to start on a new line.*/
+        putchar('\n');
+
+        return (0);
+}
