@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 /**
  * main - Entry point
  *
@@ -6,19 +7,20 @@
  */
 int main(void)
 {
-        /*Declare variable letter with value a*/
-        char letter = 'a';
+	/* Declare variable 'letter' with value 'a' */
+	char letter = 'a';
 
-        while (letter <= 'z')
-        {
-		/*Make chect that letter not equal q and e*/
+	while (letter <= 'z')
+	{
+		/* Check that letter is not equal to 'q' and 'e' */
 		if (letter != 'q' && letter != 'e')
-			putchar(letter); /*print the current letter*/
-                letter++; /*Increment letter by 1 to go to the next letter in ASCII*/
-        }
+			putchar(letter); /* Print the current letter */
 
-        /*output> new line character causing the next output to start on a new line.*/
-        putchar('\n');
+		letter++; /* Increment letter by 1 to go to the next letter in ASCII */
+	}
 
-        return (0);
+	putchar('\n'); /* Output a new line character */
+
+	return 0;
 }
+
