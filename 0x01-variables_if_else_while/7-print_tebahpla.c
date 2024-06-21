@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -6,17 +7,16 @@
  */
 int main(void)
 {
-        /*Declare variable letter with value a*/
-        char letter = 'z';
+	/* Declare variable letter with value 'z' */
+	char letter = 'z';
 
-        while (letter >= 'a')
-        {
-                putchar(letter); /*print the current letter*/
-                letter--; /*decrement letter by 1 to go to the next letter in ASCII*/
-        }
+	while (letter >= 'a')
+	{
+		putchar(letter); /* Print the current letter */
+		letter--; /* Decrement letter by 1 to go to the next letter in ASCII */
+	}
 
-        /*output> new line character causing the next output to start on a new line.*/
-        putchar('\n');
+	putchar('\n'); /* Print a new line at the end */
 
-        return (0);
+	return (0);
 }
