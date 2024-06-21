@@ -12,10 +12,10 @@ int main(void)
 	while (letter <= 'z')
 	{
 		putchar(letter); /*print the current letter*/
-		letter ++; /*Increment letter by 1 to go to the next letter in ASCII*/
+		letter++; /*Increment letter by 1 to go to the next letter in ASCII*/
 	}
 
-	/*outputs a new line character, causing the next output to start on a new line.*/
+	/*output> new line character causing the next output to start on a new line.*/
 	putchar('\n');
 
 	return (0);
