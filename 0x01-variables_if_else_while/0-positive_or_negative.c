@@ -1,13 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* 
- * Function: main
- * -------------------
- * Entry point of the program.
- * Initializes a random number generator and prints whether a randomly generated number is positive, negative, or zero.
+/**
+ * main - Entry point
  *
- * Returns: Always returns 0 to indicate successful execution.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -15,10 +12,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if(n > 0)
-		printf("%d is Positive\n", n); // Print message if n is positive
+		printf("%d is Positive\n", n); /*Print message if n is positive*/
 	else if(n < 0)
-		printf("%d is negative\n", n); // Print message if n is negative
+		printf("%d is negative\n", n); /*Print message if n is negative*/
 	else
-		printf("%d is Zero\n", n); // Print message if n is zero
+		printf("%d is Zero\n", n); /*Print message if n is zero*/
 	return (0);
 }
