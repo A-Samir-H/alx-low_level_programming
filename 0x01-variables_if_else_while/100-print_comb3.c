@@ -17,13 +17,16 @@ int main(void)
 			{
 				putchar(num + '0');
                         	putchar(num2 + '0');
-				putchar(','); /* Print comma */
-                        	putchar(' '); /* Print space */
+				if (num != 8 || num2 != 9)
+				{
+					putchar(','); /* Print comma */
+					putchar(' '); /* Print space */
+				}
 			}
 		}
         }
 
         putchar('\n'); /* Print a new line at the end */
 
-        return (0);
+      	return (0);
 }
